@@ -1,38 +1,43 @@
+<!-- DO NOT CHANGE THIS -->
 <p align="center">
-    <img src="https://github.com/eldritch-theme/eldritch/raw/master/assets/logo/green-transparent.png" width="80" />
-    <h2 align="center">Eldritch for lich</h2>
+  <img src="https://raw.github.com/eldritch-theme/eldritch/master/assets/logo/logo.png" width=150>
+</p>
+<p>
+  Eldritch is a community-driven dark theme inspired by Lovecraftian horror. With tones from the dark abyss and an emphasis on green and blue, it caters to those who appreciate the darker side of life.
 </p>
 
-<p align="center">A community-driven dark theme inspired by Lovecraftian horror, with tones from the dark abyss and an emphasis on green and blue</p>
+Main Theme repo can be found [here](https://github.com/eldritch-theme/eldritch)
 
-<p align="center">
-    <a href="https://github.com/eldritch-theme/eldritch">
-        <img src="https://img.shields.io/badge/community-eldritch-37f499?labelColor=212337&style=for-the-badge" />
-    </a>
-</p>
+### Showcase
 
-## Usage
+<details>
+    <summary>🦑 Cthulhu (Default)</summary>
+    <img src=".github/screenshots/cthulhu.webp" alt="Cthulhu"/>
+</details>
+<details>
+    <summary>🌀 Abyss (Darker)</summary>
+    <img src=".github/screenshots/abyss.webp" alt="Abyss"/>
+</details>
+<details>
+    <summary>🌅 Dusk (Light)</summary>
+    <img src=".github/screenshots/dusk.webp" alt="Dusk"/>
+</details>
 
-1. Open lich → **Settings → Appearance → Import**.
-2. Paste the repository URL: `https://github.com/omartelo/eldritch-lich`
-3. Click **Install**.
+### Installation
+
+[lich](https://github.com/omartelo/lich) installs a theme repository from its
+URL — nothing to download or copy by hand:
+
+1. Open lich and go to **Settings → Appearance**.
+2. Next to **Theme**, click **Import**.
+3. Paste `https://github.com/omartelo/eldritch-lich` and click **Install**.
 4. Pick a variant in the theme picker. The terminal picker defaults to
-   **Match app theme**, so one pick dresses both — or choose a different variant
-   there if you want the panes to differ.
+   **Match app**, so one pick dresses the interface and the terminal panes
+   alike — or choose a different variant there if you want them to differ.
 
-To take a later release, hit **Update** on the theme's row.
+Later releases are taken with **Update** on the theme's row.
 
-### Local install
-
-An absolute path is an accepted remote, so a clone installs the same way:
-
-```bash
-git clone https://github.com/omartelo/eldritch-lich.git
-```
-
-Then paste the absolute path of the clone into **Settings → Appearance → Import**.
-
-## Variants
+### Variants
 
 | Theme | Upstream palette | `id` | `scheme` |
 |---|---|---|---|
@@ -40,7 +45,7 @@ Then paste the absolute path of the clone into **Settings → Appearance → Imp
 | Eldritch Abyss | 🌀 Abyss | `eldritch-abyss` | dark |
 | Eldritch Dusk | 🌅 Dusk | `eldritch-dusk` | light |
 
-## How the palette maps
+### How the palette maps
 
 The upstream [color specification](https://github.com/eldritch-theme/eldritch/blob/master/SPEC.md)
 names four background rungs; lich's surface tokens take them as an elevation
@@ -64,7 +69,7 @@ The terminal palettes follow the upstream
 [Alacritty port](https://github.com/eldritch-theme/alacritty), which carries all
 three variants.
 
-### Dusk legibility notes
+#### Dusk legibility notes
 
 Neon on near-white is a losing fight, so the light variant swaps a few slots for
 their darker siblings from the Abyss palette — same family, readable at body
@@ -77,12 +82,12 @@ size:
 - `ring` is purple, which the spec prescribes for Dusk text roles where green and
   cyan are decorative only.
 
-## Thanks to
+### Thanks to
 
 - [omartelo](https://github.com/omartelo) — port author
 - [Eldritch contributors](https://github.com/eldritch-theme) — original palette
 
-## Contributing
+### Contributing
 
 Each variant is one lich theme file — `eldritch.json`, `eldritch-abyss.json`,
 `eldritch-dusk.json` — beside the `lich-theme.json` manifest that carries the
@@ -101,6 +106,6 @@ To propose a tweak:
 
 Palette reference: [eldritch-theme/eldritch](https://github.com/eldritch-theme/eldritch).
 
-## License
+### License
 
 [MIT](./LICENSE)
