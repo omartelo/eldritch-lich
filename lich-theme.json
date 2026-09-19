@@ -1,6 +1,7 @@
 {
   "name": "Eldritch",
-  "version": "1.0.0",
+  "version": "1.1.0",
+  "minLichVersion": "0.53.0",
   "description": "A community-driven dark theme inspired by Lovecraftian horror. Includes the Cthulhu, Abyss and Dusk palettes.",
   "author": "omartelo"
 }

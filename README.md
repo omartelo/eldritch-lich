@@ -60,6 +60,8 @@ ladder, so the chrome stays dark instead of drifting to mid-grey:
 | `comment` | `muted-foreground` — secondary text, paths, resting icons |
 | `green` | `primary` — the one high-emphasis fill, per the spec's *focus / active* role |
 | `red` | `destructive` |
+| `green` | `tone-pass`: "passed" in the status line |
+| `yellow` | `tone-wait`: "waiting on you" |
 | `cyan` | `ring` — the focus ring; kept off `primary` so a focused green button still shows one |
 
 Dusk shifts the ladder one rung down (`currentline` is the canvas, `background`
@@ -81,6 +83,11 @@ size:
   the Abyss red for the same reason.
 - `ring` is purple, which the spec prescribes for Dusk text roles where green and
   cyan are decorative only.
+- `tone-pass` (`#1a744a`) and `tone-wait` (`#995500`) are the Eldritch green and
+  orange with their lightness lowered. The status line sets them at 12px, where
+  WCAG asks 4.5:1, and the upstream values read 1.66:1 and 1.45:1 on Dusk's light
+  canvas. Hue and saturation are untouched; Cthulhu and Abyss take the upstream
+  values as they are.
 
 ### Thanks to
 

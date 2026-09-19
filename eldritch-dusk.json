@@ -18,6 +18,8 @@
     "accent": "#d5d9db",
     "accent-foreground": "#1e2029",
     "destructive": "#cc5860",
+    "tone-pass": "#1a744a",
+    "tone-wait": "#995500",
     "border": "#d5d9db",
     "input": "#c9cbcd",
     "ring": "#8a69f7",
